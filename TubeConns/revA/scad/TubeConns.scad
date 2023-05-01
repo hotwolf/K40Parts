@@ -33,6 +33,8 @@
 $pp1_colour = "Orange";
 include <../../../lib/NopSCADlib/lib.scad>
 
+connHole=9.3; 
+
 //Hose fitting
 //Reused Paul Tibble's design -> https://www.thingiverse.com/Paul_Tibble/about
 module hoseFitting(outer_diameter = 8.8,  //Outer Diameter (bottom)
@@ -78,7 +80,7 @@ module connector_mount(label="OUT") {
       }
       union() {
          translate([0,0,-9]) cylinder(h=10,d=16.9);
-         translate([0,0,-3.5]) cylinder(h=10,d=8.8,$fn=64);
+         translate([0,0,-3.5]) cylinder(h=10,d=connHole,$fn=64);
          translate([0,6,1.5]) linear_extrude(6) text(label,size=6,halign="center");
       }
    }
@@ -91,8 +93,8 @@ module connector_mount(label="OUT") {
       }
       union() {
          translate([0,0,-9]) cylinder(h=10,d=13.9);
-         translate([0,0,-3.5]) cylinder(h=10,d=8.8,$fn=64);
-         for (a=[0:72:180]) {
+         translate([0,0,-3.5]) cylinder(h=10,d=connHole,$fn=64);
+         for (a=[0:60:180]) {
             rotate([0,0,a]) cube([1,40,40],center=true);
          } 
       }
@@ -103,7 +105,7 @@ module connector_mount(label="OUT") {
          translate([0,0,-2.2]) cylinder(h=3.2,d=12.9);
       }
       union() {
-         translate([0,0,-3.5]) cylinder(h=10,d=8.8,$fn=64);
+         translate([0,0,-3.5]) cylinder(h=10,d=connHole,$fn=64);
       }
   }
 }
@@ -145,7 +147,7 @@ module air_connector() {
           union() {
              translate([0,0,-9]) cylinder(h=10,d=13.9);
              translate([0,0,-3.5]) cylinder(h=10,d=5,$fn=64);
-             for (a=[0:72:180]) {
+             for (a=[0:60:180]) {
                 rotate([0,0,a]) cube([1,40,40],center=true);
              } 
           }
@@ -182,6 +184,7 @@ module air_connector_A_stl() {
        air_connector();
        #translate([0,0,-29.5]) cube(60,center=true);
     }
+    translate([0,0,0]) cylinder(h=1,d=30);
 }
 
 //Air connector
@@ -191,6 +194,7 @@ module air_connector_B_stl() {
        air_connector();
        translate([0,0,31.5]) cube(60,center=true);
     }
+    translate([0,0,0]) cylinder(h=1,d=30);
 }
 
 
