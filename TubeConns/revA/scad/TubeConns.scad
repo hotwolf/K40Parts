@@ -92,7 +92,7 @@ module connector_mount(label="OUT") {
       union() {
          translate([0,0,-9]) cylinder(h=10,d=13.9);
          translate([0,0,-3.5]) cylinder(h=10,d=8.8,$fn=64);
-         for (a=[0:36:180]) {
+         for (a=[0:72:180]) {
             rotate([0,0,a]) cube([1,40,40],center=true);
          } 
       }
@@ -145,7 +145,7 @@ module air_connector() {
           union() {
              translate([0,0,-9]) cylinder(h=10,d=13.9);
              translate([0,0,-3.5]) cylinder(h=10,d=5,$fn=64);
-             for (a=[0:36:180]) {
+             for (a=[0:72:180]) {
                 rotate([0,0,a]) cube([1,40,40],center=true);
              } 
           }
@@ -180,7 +180,7 @@ module air_connector_A_stl() {
     stl("air_connector_A");
     difference() {
        air_connector();
-       translate([0,0,-28.6]) cube(60,center=true);
+       #translate([0,0,-29.5]) cube(60,center=true);
     }
 }
 
@@ -189,7 +189,7 @@ module air_connector_B_stl() {
     stl("air_connector_B");
     difference() {
        air_connector();
-       translate([0,0,31.4]) cube(60,center=true);
+       translate([0,0,31.5]) cube(60,center=true);
     }
 }
 
