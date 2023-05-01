@@ -81,10 +81,12 @@ module airFlow(width=4,shorten=0) {
 
 
       
-      path=rounded_path([[25,-25,-4],
+      path=
+           bezier_path(
+           rounded_path([[25,-25,-4],
                          [25,-25,-20], 20,
-                         [focusX,focusY-20,focusZ+5], 10,
-                         [focusX,focusY,focusZ]]);
+                         [focusX,focusY-20,focusZ+12], 10,
+                         [focusX,focusY,focusZ]]),100);
       spath=shorten(path,shorten); 
 //      echo(path);
 //      echo(spath);
@@ -104,7 +106,7 @@ module AirNozzle_stl() {
       difference() {
          union() {
            hull() {  
-              #airFlow(width=5.5,shorten=1);
+              airFlow(width=5.5,shorten=9);
 //              airFlow(width=8,shorten=7);
 //              airFlow(width=10,shorten=8);
                translate([25,-25,-7])    cylinder(h=12,d=5.5,$fn=24);            
@@ -130,6 +132,9 @@ module AirNozzle_stl() {
            translate([25,-25,-4])   cylinder(h=20,r=5,$fn=66);
            translate([-15,-16,-20]) cube([46,31,20]);
            translate([-15,-40,5]) cube([46,60,10]);
+             
+           *translate([0,0,-21-50.8+-5+4]) cube([100,100,10],center=true);
+          
          }
       }
    }
@@ -166,6 +171,10 @@ if ($preview) {
   //Focal point  
   color("Red")
   translate([0,0,-21-50.8]) sphere(4); 
+
+  //Table  
+  color("BurlyWood")
+  translate([0,0,-21.5-50.8]) cube([100,100,1],center=true);
 
   main_assembly();
   
