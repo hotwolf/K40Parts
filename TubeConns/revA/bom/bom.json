@@ -1,0 +1,30 @@
+[
+    {
+        "name": "main_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "G1/4 tube connector": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "water_in_mount.stl": {
+                "count": 1,
+                "colour": "Orange"
+            },
+            "water_out_mount.stl": {
+                "count": 1,
+                "colour": "Orange"
+            },
+            "air_connector.stl": {
+                "count": 1,
+                "colour": "Orange"
+            }
+        },
+        "routed": {}
+    }
+]

@@ -1,0 +1,8 @@
+main_assembly:
+Vitamins:
+  2 G1/4 tube connector
+
+Printed:
+  1 air_connector.stl
+  1 water_in_mount.stl
+  1 water_out_mount.stl
