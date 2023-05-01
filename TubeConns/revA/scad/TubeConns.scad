@@ -60,7 +60,7 @@ module hoseFitting(outer_diameter = 8.8,  //Outer Diameter (bottom)
 
 //Connector model
 module connector() {
-   vitamin(str("G1/4 tube connector"));
+   vitamin(str("connector(): G1/4 tube connector"));
    
    color("Gold") {
       translate([0,0,23.5]) hoseFitting();
