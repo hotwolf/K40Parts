@@ -20,7 +20,11 @@
                 "count": 1,
                 "colour": "Orange"
             },
-            "air_connector.stl": {
+            "air_connector_A.stl": {
+                "count": 1,
+                "colour": "Orange"
+            },
+            "air_connector_B.stl": {
                 "count": 1,
                 "colour": "Orange"
             }

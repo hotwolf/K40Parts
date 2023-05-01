@@ -123,8 +123,7 @@ module water_out_mount_stl() {
 } 
 
 //Air connector
-module air_connector_stl() {
-    stl("air_connector");
+module air_connector() {
     color(pp1_colour) {
                 
        difference() {
@@ -173,13 +172,27 @@ module air_connector_stl() {
                    barb_size = 0.5,      //Rib Thickness (bottom), set to Zero to remove
                    length = 20);         //Length (bottom)
 
-      
-      
-      
-      
-      
    }
 } 
+
+//Air connector
+module air_connector_A_stl() {
+    stl("air_connector_A");
+    difference() {
+       air_connector();
+       translate([0,0,-28.6]) cube(60,center=true);
+    }
+}
+
+//Air connector
+module air_connector_B_stl() {
+    stl("air_connector_B");
+    difference() {
+       air_connector();
+       translate([0,0,31.4]) cube(60,center=true);
+    }
+}
+
 
 //! 
 module main_assembly()
@@ -194,7 +207,8 @@ assembly("main") {
   translate([0,0,0]) water_out_mount_stl();
     
   //Air
-  translate([40,0,0]) air_connector_stl();
+  translate([40,0,0]) air_connector_A_stl();
+  translate([40,0,0]) air_connector_B_stl();
 }
 
 //Model of the lense holder 

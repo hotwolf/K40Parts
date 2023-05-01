@@ -1,4 +1,4 @@
-stls/air_connector.stl: \
+stls/air_connector_B.stl: \
 	/home/dirk/Projects/K40Parts/lib/NopSCADlib/printed/fan_guard.scad \
 	/home/dirk/Projects/K40Parts/lib/NopSCADlib/utils/core/rounded_rectangle.scad \
 	/home/dirk/Projects/K40Parts/lib/NopSCADlib/utils/core/teardrops.scad \

@@ -1,6 +1,6 @@
 <a name="TOP"></a>
 # RevA
-![Main Assembly]=/revA/assemblies/main_assembled.png)
+![Main Assembly]=(/revA/assemblies/main_assembled.png)
 
 <span></span>
 
