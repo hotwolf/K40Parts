@@ -1,0 +1,28 @@
+[
+    {
+        "name": "main_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "washer(M6_washer): Washer  M6 x 12.5mm x 1.5mm": {
+                "count": 1
+            },
+            "screw(M6_cap_screw, 16): Screw M6 cap x 16mm": {
+                "count": 1
+            },
+            "nut(M6_nut): Nut M6 x 5mm ": {
+                "count": 1
+            }
+        },
+        "printed": {
+            "NutHelper.stl": {
+                "count": 1,
+                "colour": "Orange"
+            }
+        },
+        "routed": {}
+    }
+]

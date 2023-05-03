@@ -1,0 +1,8 @@
+main_assembly:
+Vitamins:
+  1 Nut M6 x 5mm 
+  1 Screw M6 cap x 16mm
+  1 Washer  M6 x 12.5mm x 1.5mm
+
+Printed:
+  1 NutHelper.stl

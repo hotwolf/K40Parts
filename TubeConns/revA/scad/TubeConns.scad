@@ -182,19 +182,26 @@ module air_connector_A_stl() {
     stl("air_connector_A");
     difference() {
        air_connector();
-       #translate([0,0,-29.5]) cube(60,center=true);
+       translate([0,0,-29.5]) cube(60,center=true);
     }
-    translate([0,0,0]) cylinder(h=1,d=30);
+    difference() {
+       translate([0,0,0]) cylinder(h=1,d=30);
+       translate([0,0,-3.5]) cylinder(h=10,d=4,$fn=64);
+    }
 }
 
 //Air connector
 module air_connector_B_stl() {
     stl("air_connector_B");
-    difference() {
+    difference() { 
        air_connector();
        translate([0,0,31.5]) cube(60,center=true);
     }
-    translate([0,0,0]) cylinder(h=1,d=30);
+    difference() {
+       translate([0,0,0]) cylinder(h=1,d=30);
+       translate([0,0,-3.5]) cylinder(h=10,d=4,$fn=64);
+    }
+
 }
 
 
