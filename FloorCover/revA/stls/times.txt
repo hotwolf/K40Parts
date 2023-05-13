@@ -1,0 +1,3 @@
+{
+    "floorCover.stl": 8.163
+}

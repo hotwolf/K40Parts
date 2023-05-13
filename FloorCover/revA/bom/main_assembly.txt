@@ -1,0 +1,3 @@
+main_assembly:
+Printed:
+  1 floorCover.stl
