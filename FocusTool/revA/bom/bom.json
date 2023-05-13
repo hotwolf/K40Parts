@@ -1,0 +1,22 @@
+[
+    {
+        "name": "main_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "magnet(): Neodym Magnet (D=4,H=1)": {
+                "count": 4
+            }
+        },
+        "printed": {
+            "FocusTool.stl": {
+                "count": 1,
+                "colour": "Orange"
+            }
+        },
+        "routed": {}
+    }
+]

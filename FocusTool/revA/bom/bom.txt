@@ -1,0 +1,12 @@
+Vitamins:
+ M
+ a
+ i
+ n
+ 4|  4 Neodym Magnet (D=4,H=1)
+
+Printed:
+ 1|  1 FocusTool.stl
+
+Assemblies:
+  1 main_assembly
