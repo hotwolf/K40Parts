@@ -103,13 +103,13 @@ module FocusTool_stl() {
          }
          union() {       
             //Magnets 
-            translate([-14,4,-1])  cylinder(h=2,d=4,$fn=12); 
+            translate([-14,4,-1])  cylinder(h=2.4,d=3.9,$fn=12); 
             translate([-14,4,-1])  cylinder(h=10,d=2,$fn=12); 
-            translate([-14,42,-1]) cylinder(h=2,d=4,$fn=12); 
+            translate([-14,42,-1]) cylinder(h=2.4,d=3.9,$fn=12); 
             translate([-14,42,-1]) cylinder(h=10,d=2,$fn=12); 
-            translate([20,4,-1])   cylinder(h=2,d=4,$fn=12); 
+            translate([20,4,-1])   cylinder(h=2.4,d=3.9,$fn=12); 
             translate([20,4,-1])   cylinder(h=10,d=2,$fn=12); 
-            translate([20,41,-1])  cylinder(h=2,d=4,$fn=12); 
+            translate([20,41,-1])  cylinder(h=2.4,d=3.9,$fn=12); 
             translate([20,41,-1])  cylinder(h=10,d=2,$fn=12); 
          }    
       }
