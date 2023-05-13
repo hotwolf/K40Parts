@@ -1,6 +1,6 @@
 <a name="TOP"></a>
 # RevA
-![Main Assembly](revA/assemblies/main_assembled.png)
+![Main Assembly](assemblies/main_assembled.png)
 
 <span></span>
 
@@ -31,16 +31,16 @@
 
 | 1 x floorCover.stl |
 |---|
-| ![floorCover.stl](revA/stls/floorCover.png) 
+| ![floorCover.stl](stls/floorCover.png) 
 
 
 
 ### Assembly instructions
-![main_assembly](revA/assemblies/main_assembly_tn.png)
+![main_assembly](assemblies/main_assembly_tn.png)
 
 Insert a layer of aluminum foil while printing.
 
-![main_assembled](revA/assemblies/main_assembled_tn.png)
+![main_assembled](assemblies/main_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)

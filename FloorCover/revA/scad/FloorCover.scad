@@ -66,6 +66,7 @@ module floorCover() {
          translate([0,0,-2.2]) cylinder(h=3.2,d=holeD-3);
       }
       union() {
+         translate([0,0,-0.2]) cylinder(h=0.2,d=holeD-5);
       }
   }
 }
@@ -78,7 +79,7 @@ module floorCover_stl() {
 } 
 
 
-//! 
+//! Insert a layer of aluminum foil while printing.
 module main_assembly()
 assembly("main") {
 
