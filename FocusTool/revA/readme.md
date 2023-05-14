@@ -18,7 +18,7 @@
 | <span style="writing-mode: vertical-rl; text-orientation: mixed;">Main</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">TOTALS</span> |  |
 |---:|---:|:---|
 |  | | **Vitamins** |
-| &nbsp;&nbsp;4&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; Neodym Magnet (D=4,H=1) |
+| &nbsp;&nbsp;4&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; Neodym Magnet (5mmx5mmx2mm) |
 | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;Total vitamins count |
 |  | | **3D printed parts** |
 | &nbsp;&nbsp;1&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;FocusTool.stl |
@@ -33,7 +33,7 @@
 ### Vitamins
 |Qty|Description|
 |---:|:----------|
-|4| Neodym Magnet (D=4,H=1)|
+|4| Neodym Magnet (5mmx5mmx2mm)|
 
 
 ### 3D Printed parts
@@ -47,7 +47,7 @@
 ### Assembly instructions
 ![main_assembly](assemblies/main_assembly_tn.png)
 
-1. Push the magnets into the holes
+1. Insert the magnets 
 
 ![main_assembled](assemblies/main_assembled_tn.png)
 

@@ -35,11 +35,11 @@ include <../../../lib/NopSCADlib/lib.scad>
 
 
 module magnet() {
-    description = str("Neodym Magnet (D=4,H=1)");
-    vitamin(str("magnet(): ", description));
+    description = str("Neodym Magnet (5mmx5mmx2mm)");
+    vitamin(str("miniMagnet(): ", description));
     
-    color("Silver"){ cylinder(h=1,d=4); }    
-}
+    color("Silver") cube([5,5,2]);
+}    
 
 //Focus tool
 module FocusTool_stl() {
@@ -49,74 +49,53 @@ module FocusTool_stl() {
       difference() {
          union() {
            //Labels
+           translate([3,20,10]) rotate([0,0,0]) linear_extrude(1) text("50.8 mm", size=7, valign="center", halign="center");
            //50.8mm
-           translate([3,46,2]) rotate([0,0,-90]) linear_extrude(2) text("50.8 mm", size=4, valign="center", halign="leftt"); 
+           translate([3,49,10]) rotate([0,0,0]) linear_extrude(1) text("0", size=6, valign="top", halign="center"); 
            //48.8mm
-           translate([9,44,2]) rotate([0,0,-90]) linear_extrude(2) text("-2 mm", size=4, valign="center", halign="left"); 
+           translate([9,47,10]) rotate([0,0,0]) linear_extrude(1) text("2", size=6, valign="top", halign="center"); 
            //46.8mm
-           translate([15,42,2]) rotate([0,0,-90]) linear_extrude(2) text("-4 mm", size=4, valign="center", halign="left"); 
+           translate([15,45,10]) rotate([0,0,0]) linear_extrude(1) text("4", size=6, valign="top", halign="center"); 
            //44.8mm
-           translate([21,40,2]) rotate([0,0,-90]) linear_extrude(2) text("-6 mm", size=4, valign="center", halign="left"); 
+           translate([21,43,10]) rotate([0,0,0]) linear_extrude(1) text("6", size=6, valign="top", halign="center"); 
            //49.8mm
-           translate([-3,45,2]) rotate([0,0,-90]) linear_extrude(2) text("-1 mm", size=4, valign="center", halign="left"); 
+           translate([-3,48,10]) rotate([0,0,0]) linear_extrude(1) text("1", size=6, valign="top", halign="center"); 
            //47.8mm
-           translate([-9,43,2]) rotate([0,0,-90]) linear_extrude(2) text("-3 mm", size=4, valign="center", halign="left"); 
+           translate([-9,46,10]) rotate([0,0,0]) linear_extrude(1) text("3", size=6, valign="top", halign="center"); 
            //45.8mm
-           translate([-15,41,2]) rotate([0,0,-90]) linear_extrude(2) text("-5 mm", size=4, valign="center", halign="left"); 
-           //Stand
-           #translate([-18,0,0]) cube([42,2,10]);
-             
-            difference() {
-               union() {
-                  //50.8mm
-                  translate([0,0,0]) cube([6,50.8,4]);             
-                  //48.8mm
-                  translate([6,0,0]) cube([6,48.8,4]);
-                  //46.8mm
-                  translate([12,0,0]) cube([6,46.8,4]);
-                  //44.8mm
-                  translate([18,0,0]) cube([6,44.8,4]);
-                  //49.8mm
-                  translate([-6,0,0]) cube([6,49.8,4]);
-                  //47.8mm
-                  translate([-12,0,0]) cube([6,47.8,4]);
-                  //45.8mm
-                  translate([-18,0,0]) cube([6,45.8,4]);          
-               } 
-               union() {
-                  //50.8mm
-                  translate([2,2,2]) cube([2,46.8,4]);             
-                  //48.8mm
-                  translate([4,2,2]) cube([6,44.8,4]);
-                  //46.8mm
-                  translate([10,2,2]) cube([6,42.8,4]);
-                  //44.8mm
-                  translate([16,2,2]) cube([8,40.8,4]);
-                  //49.8mm
-                  translate([-4,2,2]) cube([6,45.8,4]);
-                  //47.8mm
-                  translate([-10,2,2]) cube([6,43.8,4]);
-                  //45.8mm
-                  translate([-18,2,2]) cube([8,41.8,4]);
-               }
-            }
+           translate([-15,44,10]) rotate([0,0,0]) linear_extrude(1) text("5", size=6, valign="top", halign="center"); 
+                         
+           //Block
+           //50.8mm
+           translate([0,0,0]) cube([6,50.8,10]);             
+           //48.8mm
+           translate([6,0,0]) cube([6,48.8,10]);
+           //46.8mm
+           translate([12,0,0]) cube([6,46.8,10]);
+           //44.8mm
+           translate([18,0,0]) cube([6,44.8,10]);
+           //49.8mm
+           translate([-6,0,0]) cube([6,49.8,10]);
+           //47.8mm
+           translate([-12,0,0]) cube([6,47.8,10]);
+           //45.8mm
+           translate([-18,0,0]) cube([6,45.8,10]);          
+   
          }
          union() {       
             //Magnets 
-            translate([-14,4,-1])  cylinder(h=2.4,d=3.9,$fn=12); 
-            translate([-14,4,-1])  cylinder(h=10,d=2,$fn=12); 
-            translate([-14,42,-1]) cylinder(h=2.4,d=3.9,$fn=12); 
-            translate([-14,42,-1]) cylinder(h=10,d=2,$fn=12); 
-            translate([20,4,-1])   cylinder(h=2.4,d=3.9,$fn=12); 
-            translate([20,4,-1])   cylinder(h=10,d=2,$fn=12); 
-            translate([20,41,-1])  cylinder(h=2.4,d=3.9,$fn=12); 
-            translate([20,41,-1])  cylinder(h=10,d=2,$fn=12); 
+             
+             
+            #translate([-2.55+20,1.95,0.2])  rotate([0,0,0])  cube([5.1,5.1,2.2]); 
+            #translate([-2.55-14,1.95,0.2])  rotate([0,0,0])  cube([5.1,5.1,2.2]); 
+            #translate([-2.55+20,37.95,0.2]) rotate([0,0,0])  cube([5.1,5.1,2.2]); 
+            #translate([-2.55-14,38.95,0.2]) rotate([0,0,0])  cube([5.1,5.1,2.2]); 
          }    
       }
    }
 }
 
-//! 1. Push the magnets into the holes
+//! 1. Insert the magnets 
 module main_assembly()
 assembly("main") {
 
@@ -124,10 +103,10 @@ assembly("main") {
   FocusTool_stl();
 
   //Magnets 
-  explode(-10) translate([-14,4,0])    magnet(); 
-  explode(-10) translate([-14,42,0]) magnet(); 
-  explode(-10) translate([20,4,0])   magnet(); 
-  explode(-10) translate([20,41,0])  magnet();   
+  explode(-10) translate([-2.5+20,2,0.2])  rotate([0,0,0]) magnet(); 
+  explode(-10) translate([-2.5-14,2,0.2]) rotate([0,0,0]) magnet(); 
+  explode(-10) translate([-2.5+20,38,0.2])   rotate([0,0,0]) magnet(); 
+  explode(-10) translate([-2.5-14,39,0.2])  rotate([0,0,0]) magnet();   
 }
 
 //Model of the lense holder coin
